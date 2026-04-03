@@ -29,7 +29,7 @@ body {
 .share-project-modal .share-project-modal__body .members .member-list {display: flex; flex-direction: column; border: 1px solid #eaeaea; border-radius: 12px;}
 .share-project-modal .share-project-modal__body .members .member-list .member-item {display: flex; align-items: center; gap: 12px; padding: 8px 16px 8px 8px; border-bottom: 1px solid #eaeaea;}
 .share-project-modal .share-project-modal__body .members .member-list .member-item:last-child {border-bottom: none;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-thumb {width: 44px; aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden;}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-thumb {width: 48px; aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden;}
 .share-project-modal .share-project-modal__body .members .member-list .member-item .member-info {flex: 1;}
 .share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head {display: flex; align-items: center; gap: 4px;}
 .share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head .name {font-size: 16px; font-weight: 600; color: #000; line-height: 1.4;}
