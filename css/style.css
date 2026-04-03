@@ -17,38 +17,174 @@ body {
   overflow-x: hidden;
 }
 
-.share-project-modal {width: 400px; margin: 0 auto; padding: 24px; border-radius: 24px; background-color: #fff; box-shadow: 0 8px 16px rgba(0, 0, 0, .08);}
+.share-project-modal {
+  width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .08);
+}
 
-.share-project-modal .share-project-modal__header {display: flex; justify-content: space-between; align-items: center;}
-.share-project-modal .share-project-modal__header .heading {font-size: 18px; font-weight: 700; color: #000; line-height: 1.3;}
-.share-project-modal .share-project-modal__header .btn-manage {display: inline-flex; justify-content: center; align-items: center; height: 32px; padding: 0 12px; font-size: 12px; font-weight: 500; color: #000; border: 1px solid #eaeaea; border-radius: 8px; background-color: #fff; transition: all .3s ease; cursor: pointer;}
-.share-project-modal .share-project-modal__header .btn-manage:hover {background-color: #f5f5f5;}
+.share-project-modal .share-project-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.share-project-modal .share-project-modal__header .heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+}
 
-.share-project-modal .share-project-modal__body {margin: 16px 0 0;}
-.share-project-modal .share-project-modal__body .members {}
-.share-project-modal .share-project-modal__body .members .member-list {display: flex; flex-direction: column; border: 1px solid #eaeaea; border-radius: 12px;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item {display: flex; align-items: center; gap: 12px; padding: 8px 16px 8px 8px; border-bottom: 1px solid #eaeaea;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item:last-child {border-bottom: none;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-thumb {width: 48px; aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info {flex: 1;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head {display: flex; align-items: center; gap: 4px;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head .name {font-size: 16px; font-weight: 600; color: #000; line-height: 1.4;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head .badge {display: inline-flex; justify-content: center; align-items: center; padding: 2px 4px; font-size: 11px; font-weight: 500; color: #0084ff; line-height: 1; border-radius: 9999px; background-color: #d9edff;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .email {font-size: 14px; font-weight: 400; color: #767676; line-height: 1.5;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-option {display: inline-flex; justify-content: center; align-items: center; width: 32px; aspect-ratio: 1 / 1; border-radius: 50%; background-color: transparent; transition: all .3s ease; cursor: pointer;}
-.share-project-modal .share-project-modal__body .members .member-list .member-item .member-option:hover {background-color: #f5f5f5;}
+.share-project-modal .share-project-modal__header .btn-manage {
+  display: inline-flex;
+  justify-content: center; 
+  align-items: center; height: 32px; 
+  padding: 0 12px; font-size: 12px; 
+  font-weight: 500; 
+  color: #000; border: 1px solid #eaeaea;
+  border-radius: 8px; 
+  background-color: #fff; 
+  transition: all .3s ease; cursor: pointer;
+}
+.share-project-modal .share-project-modal__header .btn-manage:hover {
+  background-color: #f5f5f5;
+}
 
-.share-project-modal .share-project-modal__body .members .member-add-btn {display: flex; justify-content: center; align-items: center; width: 100%; height: 44px; margin: 8px 0 0; padding: 0 12px; border: 1px solid #eaeaea; border-radius: 12px; transition: all .3s ease; cursor: pointer;}
-.share-project-modal .share-project-modal__body .members .member-add-btn .add-icon path,
-.share-project-modal .share-project-modal__body .members .member-add-btn .add-text {transition: all .3s ease;}
-.share-project-modal .share-project-modal__body .members .member-add-btn .add-text {font-size: 14px; font-weight: 500; color: #000;}
-.share-project-modal .share-project-modal__body .members .member-add-btn:hover {background-color: #000; border: 1px solid transparent;}
-.share-project-modal .share-project-modal__body .members .member-add-btn:hover .add-icon path {fill: #fff;}
-.share-project-modal .share-project-modal__body .members .member-add-btn:hover .add-text {color: #fff;}
+.share-project-modal .share-project-modal__body {
+  margin: 16px 0 0;
+}
+.share-project-modal .share-project-modal__body .members .member-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 8px;
+  border-bottom: 1px solid #eaeaea;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item:last-child {
+  border-bottom: none;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-thumb {
+  width: 48px;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info {
+  flex: 1;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.4;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .member-head .badge {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 2px 4px; 
+  font-size: 11px; 
+  font-weight: 500;
+  color: #0084ff;
+  line-height: 1;
+  border-radius: 9999px;
+  background-color: #d9edff;}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-info .email {
+  font-size: 14px; 
+  font-weight: 400; 
+  color: #767676; 
+  line-height: 1.5;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-option {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 32px; 
+  aspect-ratio: 1 / 1; 
+  border-radius: 50%; 
+  background-color: transparent; 
+  transition: all .3s ease; 
+  cursor: pointer;
+}
+.share-project-modal .share-project-modal__body .members .member-list .member-item .member-option:hover {
+  background-color: #f5f5f5;
+}
 
-.share-project-modal .share-project-modal__body .link-share {margin: 24px 0 0;}
-.share-project-modal .share-project-modal__body .link-share .link-share-heading {font-size: 16px; font-weight: 600; color: #000; line-height: 1.3;}
-.share-project-modal .share-project-modal__body .link-share .link-share-box {display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 12px 0 0; padding: 4px 4px 4px 12px; border: 1px solid #eaeaea; border-radius: 12px; background-color: #fafafa}
-.share-project-modal .share-project-modal__body .link-share .link-share-box .link-url {font-size: 12px; font-weight: 400; color: #999; line-height: 1.5;}
-.share-project-modal .share-project-modal__body .link-share .link-share-box .btn-copy {display: inline-flex; justify-content: center; align-items: center; height: 32px; gap: 2px; padding: 0 12px 0 8px; border: 1px solid #eaeaea; border-radius: 8px; background-color: #fff; transition: all .3s ease; cursor: pointer;}
-.share-project-modal .share-project-modal__body .link-share .link-share-box .btn-copy:hover {background-color: #f5f5f5;}
+.share-project-modal .share-project-modal__body .members .member-add-btn {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  height: 44px; 
+  margin: 8px 0 0; 
+  padding: 0 12px; 
+  font-size: 14px; 
+  font-weight: 500; 
+  color: #000; 
+  border: 1px solid #eaeaea; 
+  border-radius: 12px;
+  transition: all .3s ease; 
+  cursor: pointer;
+}
+.share-project-modal .share-project-modal__body .members .member-add-btn:hover {
+  color: #fff; 
+  background-color: #000; 
+  border: 1px solid transparent;
+}
+
+.share-project-modal .share-project-modal__body .link-share {
+  margin: 24px 0 0;
+}
+.share-project-modal .share-project-modal__body .link-share .link-share-heading {
+  font-size: 16px; 
+  font-weight: 600; 
+  color: #000; 
+  line-height: 1.3;
+}
+.share-project-modal .share-project-modal__body .link-share .link-share-box {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 12px; 
+  margin: 12px 0 0; 
+  padding: 4px 4px 4px 12px; 
+  border: 1px solid #eaeaea; 
+  border-radius: 12px; 
+  background-color: #fafafa;
+}
+.share-project-modal .share-project-modal__body .link-share .link-share-box .link-url {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5;
+}
+.share-project-modal .share-project-modal__body .link-share .link-share-box .btn-copy {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  gap: 2px;
+  padding: 0 12px 0 8px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.share-project-modal .share-project-modal__body .link-share .link-share-box .btn-copy:hover {
+  background-color: #f5f5f5;
+}
